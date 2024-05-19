@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>randomColor</title>
+    <style>
+       
+        body{
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20rem;
+            background-color: aqua;
+        }
+        button{
+
+            border: 5px solid rgb(255, 254, 254);
+            background-color: blue;
+            color: white;
+            width: 15rem;
+            height: 5rem;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="backgroundcolor()">change BG color</button>
+    </div>
+    <script>
+             function backgroundcolor(){
+             var randomColor=(Math.floor(Math.random()*15024512)).toString(16);
+             console.log(randomColor)
+             document.body.style.background="#"+randomColor;
+            }
+    </script>
+</body>
+</html>
